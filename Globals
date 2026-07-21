@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* Paper & ink */
+  --paper: #eeede7;
+  --paper-raised: #f7f6f2;
+  --ink: #201d1a;
+  --ink-soft: #5a5650;
+  --rule: #d8d5cc;
+
+  /* Editor's marks */
+  --pen-red: #a53a2e;
+  --pen-red-bg: #f4e2de;
+  --pen-blue: #2c4570;
+  --pen-blue-bg: #dfe6ef;
+
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, sans-serif;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-rule: var(--rule);
+  --color-pen-red: var(--pen-red);
+  --color-pen-red-bg: var(--pen-red-bg);
+  --color-pen-blue: var(--pen-blue);
+  --color-pen-blue-bg: var(--pen-blue-bg);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
